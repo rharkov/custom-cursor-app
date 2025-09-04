@@ -5,17 +5,57 @@ body,
 #__next,
 #root {
   width: 100%;
-  min-height: 100%;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 
 body {
   background-color: #f5f5dc;
-  font-family: var(--font-poppins), sans-serif;
+  font-family: var(--font-poppins);
   color: #3d3d3d;
 }
 
 h1 {
-  font-family: var(--font-playfair), serif;
+  font-family: var(--font-playfair);
 }
+
+:root {
+  --font-back-serif: "Schnyder S Light", serif;
+}
+
+@font-face {
+  font-family: "Schnyder S Light";
+  src: url("/fonts/Schnyder%20S%20Light.otf") format("opentype");
+  font-weight: 300 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Schnyder S Light";
+  src: url("/fonts/Schnyder%20S%20Light%20Italic.otf") format("opentype");
+  font-weight: 300 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Optional: if you have a web license for Schnyder and place files under /public/fonts,
+   uncomment the @font-face and switch the variable above to 'Schnyder'. */
+/*
+@font-face {
+  font-family: 'Schnyder';
+  src: url('/fonts/Schnyder-Book.woff2') format('woff2'),
+       url('/fonts/Schnyder-Book.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Schnyder';
+  src: url('/fonts/Schnyder-Semibold.woff2') format('woff2'),
+       url('/fonts/Schnyder-Semibold.woff') format('woff');
+  font-weight: 600 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
